@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--Leo Gipson Jr, Assignment #6 login, 04242022, estimated time 2hrs, actual time 1hrs-->
+<html lang="en">
+<head>
+    <!-- This Style is added to add color to paragraph, header and background
+    -->
+    <!--links my javascript file to the html file-->
+    <script src="Leologin.js"></script>
+    <!-- This Style is added to add color to paragraph, header and background
+    -->
+    <link href="Leologinstyle.css" rel="stylesheet" type="text/css">
+    <title>UAT Space Program Login</title>
+</head>
+<body>
+    <h2>Welcome to UAT Space Program Login Site</h2>
+    <br>
+    <!-- This login library form will be used to run the credential submit button will call the function in the javascript
+    -->
+        <p id="loginStatus" class="loginID">Login Status...</p>
+        <br>
+        <form id="credSubmit" onsubmit="return false">
+            First Name:     <input type="text" id="firstName" /> <br>
+            Last Name:      <input type="text" id="lastName" /> <br>
+            Badge Number:   <input type="number" id="badgeNumber" /> <br>
+            <input type="submit" onclick="validateCreds();" />
+        </form>
+    
+</body>
+</html>
